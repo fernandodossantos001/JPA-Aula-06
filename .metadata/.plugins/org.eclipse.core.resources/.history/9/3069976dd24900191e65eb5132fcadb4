@@ -1,0 +1,17 @@
+package br.com.fiap.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="T_FORNECEDOR")
+public class Fornecedor {
+	
+	private int id;
+	
+	private String nome;
+	
+	private String cnpj;
+	
+
+}

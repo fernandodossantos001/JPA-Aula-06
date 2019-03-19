@@ -1,0 +1,11 @@
+package br.com.fiap.entity;
+
+public class ItemCarrinho {
+	
+	private int codigo;
+	
+	private int quantidade;
+	
+	private double valor; 
+
+}

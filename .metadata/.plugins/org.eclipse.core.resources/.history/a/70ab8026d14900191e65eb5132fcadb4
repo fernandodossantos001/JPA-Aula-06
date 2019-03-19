@@ -1,0 +1,26 @@
+package br.com.fiap.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="T_CLIENTE")
+@SequenceGenerator(name="nome", sequenceName="SQ_T_CLIENTE",allocationSize=1)
+public class Cliente {
+	
+	
+	@Id
+	@Column(name="id")
+	@GeneratedValue(strategy=GenerationType.SEQUENCE,generator="nome")
+	private int id;
+	
+	private String nome;
+	
+	private String cpf;
+
+}

@@ -1,0 +1,11 @@
+package br.com.fiap.entity;
+
+public class Fornecedor {
+	
+	private int id;
+	
+	private String nome;
+	
+	private String cnpj;
+
+}

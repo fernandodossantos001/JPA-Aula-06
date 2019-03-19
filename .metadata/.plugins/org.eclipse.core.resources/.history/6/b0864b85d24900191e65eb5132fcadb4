@@ -1,0 +1,19 @@
+package br.com.fiap.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="T_FORNECEDOR")
+@SequenceGenerator(name="fornecedor",sequenceName="SQ_T_FORNECEDOR",allocationSize=1)
+public class Fornecedor {
+	
+	private int id;
+	
+	private String nome;
+	
+	private String cnpj;
+	
+
+}
